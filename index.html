@@ -1,34 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo app</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-        <section class="uffer-section">
-            <header>
-                <h1>TODO APP</h1>
-       
-            <svg claass="logo-sun" xmlns="http://www.w3.org/2000/svg" width="26" height="26"><path fill="#FFF" fill-rule="evenodd" d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z"/></svg>     </header>
-        </section>
-        <section class="hero">
-            
-        <form  class="add-todo-form" autocomplete="off">
-            <input id="insert" type="text" name="insert" placeholder="Create a new todo"id="todo"/>
-            <button class="submit-btn">Submit</button>
-        </form>
-        <ul class="todo-tasks">
-            <li>Currnetly Typing</li>
-            <li>Complete online Javascript course</li>
-            <li>10 minuites meditation</li>
-            <li>Read for 1 hour</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo">
+            <a href="index.html">
+              <h1>TODO</h1>
+            </a>
+          </div>
+          <div class="sun-icon">
+            <img src="./assets/images/icon-sun.svg" alt="Sun Icon" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- <div class="container">
+      <form class="todo-form">
+         <button type="submit" class="submit-btn" id="submit-button">submit </button>
+         <input type="text" name="add-todo" placeholder="Create A New Todo..."/>
+      </form>
+      <ul class="todo-items">
+          <li>
+              <div class="todo-left">
+                  <input type="checkbox"/>
+                  <span>Complete Online JavaScript Course</span>
+              </div>
+        
+      <div class="todo-right">
+         
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </li>
+          <li>
+              <div class="todo-left">
+                  <input type="checkbox"/>
+                  <span>Complete Online JavaScript Course</span>
+              </div>
+        
+      <div class="todo-right">
+         
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </li>
+          <li>
+              <div class="todo-left">
+                  <input type="checkbox"/>
+                  <span>Complete Online JavaScript Course</span>
+              </div>
+        
+      <div class="todo-right">
+         
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </li>
+      </ul>
+      </div>
 
-        </ul>
-   
-</section>
-    <script src="script.js"></script>
-</body>
+  </div> -->
+    <div class="container">
+      <form class="todo_form" autocomplete="off">
+        <button type="submit" class="submit_btn">Submit</button>
+        <input type="text" name="add_todo" placeholder="Create a new todo..." />
+        <input type="text" name="hidden_item" hidden />
+      </form>
+
+      <ul class="todo-lists">
+        <div class="todo-footer">
+          <div class="left-items">5 Items left</div>
+          <ul class="footer-menus">
+            <li class="active">All</li>
+            <li>Active</li>
+            <li>Completed</li>
+          </ul>
+          <button class="clear-completed">Clear Completed</button>
+        </div>
+      </ul>
+    </div>
+
+    <script src="./assets/app.js"></script>
+  </body>
 </html>
